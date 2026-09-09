@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云缨本子-同人创作爱好者的作品推荐与赏析指南</title>
+    <meta name="description" content="云缨本子专题页面，为同人漫画与插画爱好者提供基于角色设定的创作方向参考、画风与内容分类指南、社区交流建议及常见问题解答，帮助您深入了解云缨这一角色的同人创作生态。">
+    <meta name="keywords" content="云缨,本子,同人创作,漫画推荐,插画赏析,角色同人,创作指南">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+            background-color: #f7f4f0;
+            color: #2d2a26;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 18px 0;
+            border-bottom: 3px solid #e94560;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(145deg, #e94560, #c23152);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .logo-text {
+            color: #f0e9e2;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            color: #e94560;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .main-nav a:hover {
+            color: #fff;
+            border-bottom-color: #e94560;
+        }
+
+        /* 首屏 Hero */
+        .hero-section {
+            background: linear-gradient(120deg, #f9f5f0 0%, #efe5dc 100%);
+            padding: 60px 0 50px;
+            border-bottom: 1px solid #e2d6cc;
+            position: relative;
+        }
+
+        .hero-section::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: repeating-linear-gradient(45deg, #e94560, #e94560 10px, transparent 10px, transparent 20px);
+            opacity: 0.4;
+        }
+
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1 1 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .hero-text h1 .highlight {
+            color: #e94560;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-text h1 .highlight::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 6px;
+            width: 100%;
+            height: 8px;
+            background: rgba(233, 69, 96, 0.15);
+            z-index: -1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: #5e5a55;
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #e94560;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #c23152;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1a1a2e;
+            border: 2px solid #1a1a2e;
+        }
+
+        .btn-outline:hover {
+            background: #1a1a2e;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .hero-illustration {
+            flex: 0 0 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .illustration-box {
+            width: 240px;
+            height: 240px;
+            background: linear-gradient(145deg, #e94560, #1a1a2e);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            transform: rotate(3deg);
+        }
+
+        .illustration-box .big-char {
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1;
+            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .illustration-box .small-char {
+            font-size: 1.2rem;
+            letter-spacing: 8px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* 内容区通用 */
+        .content-section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 18px;
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 8px;
+            width: 6px;
+            background: #e94560;
+            border-radius: 3px;
+        }
+
+        .section-desc {
+            color: #6b6560;
+            margin-bottom: 30px;
+            font-size: 0.98rem;
+        }
+
+        /* 卡片区 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            height: 180px;
+            background: linear-gradient(145deg, #e0d6cc, #d1c2b5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #a18a7a;
+            border-bottom: 3px solid #e94560;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 60%);
+        }
+
+        .card-image .img-text {
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #e94560;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            z-index: 2;
+            box-shadow: 0 2px 6px rgba(233, 69, 96, 0.4);
+        }
+
+        .card-tag.blue {
+            background: #1a1a2e;
+            box-shadow: 0 2px 6px rgba(26, 26, 46, 0.3);
+        }
+
+        .card-tag.green {
+            background: #2d6a4f;
+            box-shadow: 0 2px 6px rgba(45, 106, 79, 0.3);
+        }
+
+        .card-tag.orange {
+            background: #e76f51;
+            box-shadow: 0 2px 6px rgba(231, 111, 81, 0.3);
+        }
+
+        .card-content {
+            padding: 16px 20px 0;
+        }
+
+        .card-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: #5e5a55;
+            line-height: 1.6;
+        }
+
+        .card-meta {
+            padding: 12px 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #8b8580;
+            border-top: 1px solid #f0ebe5;
+            margin-top: 12px;
+        }
+
+        /* 双栏内容 */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .info-block {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #e94560;
+        }
+
+        .info-block h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #1a1a2e;
+        }
+
+        .info-block h3 i {
+            font-style: normal;
+            margin-right: 8px;
+            color: #e94560;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #eee5dd;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .list-marker {
+            color: #e94560;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .info-block p {
+            font-size: 0.95rem;
+            color: #5e5a55;
+        }
+
+        /* 创作方向分类 */
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .cat-item {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-top: 4px solid transparent;
+        }
+
+        .cat-item:hover {
+            border-top-color: #e94560;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .cat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .cat-item h4 {
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+            color: #1a1a2e;
+        }
+
+        .cat-item p {
+            font-size: 0.85rem;
+            color: #6b6560;
+            line-height: 1.5;
+        }
+
+        /* 画风与内容类别 */
+        .style-panel {
+            background: #1a1a2e;
+            border-radius: 20px;
+            padding: 40px;
+            color: #f0e9e2;
+            margin: 30px 0;
+        }
+
+        .style-panel .panel-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .style-panel .panel-desc {
+            color: #aab;
+            margin-bottom: 30px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tag-item {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #ddd;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .tag-item:hover {
+            background: #e94560;
+            border-color: #e94560;
+            color: #fff;
+        }
+
+        /* 社区交流 */
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .community-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .community-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .comm-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(145deg, #f0e6df, #e5d5cc);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 2rem;
+        }
+
+        .community-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .community-card p {
+            font-size: 0.9rem;
+            color: #6b6560;
+            line-height: 1.6;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #1a1a2e;
+            cursor: default;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: #fdfaf7;
+            border-left: 4px solid #e94560;
+        }
+
+        .faq-q-marker {
+            width: 28px;
+            height: 28px;
+            background: #e94560;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            padding: 4px 24px 20px 60px;
+            font-size: 0.95rem;
+            color: #5e5a55;
+            line-height: 1.7;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1a1a2e;
+            color: #8b8790;
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #8b8790;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #e94560;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+
+            .main-nav ul {
+                justify-content: center;
+            }
+
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-illustration {
+                flex-basis: 100%;
+                margin-top: 10px;
+            }
+
+            .illustration-box {
+                width: 180px;
+                height: 180px;
+            }
+
+            .illustration-box .big-char {
+                font-size: 3.6rem;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                padding: 36px 0;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .style-panel {
+                padding: 28px 20px;
+            }
+
+            .faq-answer {
+                padding-left: 24px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                text-align: center;
+            }
+
+            .illustration-box {
+                transform: none;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">云</div>
+                <div class="logo-text">云缨<span>同人志</span></div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#intro">角色印象</a></li>
+                    <li><a href="#guide">创作指南</a></li>
+                    <li><a href="#styles">画风分类</a></li>
+                    <li><a href="#community">交流社区</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero 首屏 -->
+        <section class="hero-section">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>云缨<span class="highlight">本子</span>爱好者指南</h1>
+                    <p class="hero-subtitle">
+                        围绕云缨这一角色而展开的同人漫画与插画创作，是许多绘画爱好者和同人文化爱好者关注的话题。我们整理了一份关于题材类型、画风方向、内容特点以及社区讨论的完整指南，帮助你更好地了解这一创作领域。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#guide" class="btn btn-primary">浏览创作分类</a>
+                        <a href="#faq" class="btn btn-outline">查看常见问题</a>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="illustration-box">
+                        <div class="big-char">云</div>
+                        <div class="small-char">缨 · 本子</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 角色基础印象 -->
+        <section class="content-section" id="intro">
+            <div class="container">
+                <h2 class="section-title">角色基础印象</h2>
+                <p class="section-desc">在了解同人创作之前，不妨先回顾角色本身的魅力所在，这也是同人创作者最关注的灵感来源。</p>
+                <div class="two-column">
+                    <div class="info-block">
+                        <h3><i>◆</i> 角色气质与设定</h3>
+                        <ul class="info-list">
+                            <li><span class="list-marker">▸</span> 云缨通常被塑造为一位性格鲜明、带有少年气的女性角色，英气与活泼并存。</li>
+                            <li><span class="list-marker">▸</span> 她的着装带有东方武侠元素，配以长枪，整体风格干净利落，辨识度较高。</li>
+                            <li><span class="list-marker">▸</span> 在同人创作中，创作者常常放大其自信、直率的一面，也会挖掘她柔软或幽默的一面。</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3><i>◆</i> 同人创作的魅力</h3>
+                        <ul class="info-list">
+                            <li><span class="list-marker">▸</span> 基于原作设定，可以展开不同世界观下的剧情再创作。</li>
+                            <li><span class="list-marker">▸</span> 画师可以在保留角色神韵的前提下尝试多种画风和服装设计。</li>
+                            <li><span class="list-marker">▸</span> 同人创作是角色爱好者之间建立共鸣与连接的重要方式。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 创作类型分类 -->
+        <section class="content-section" id="guide" style="background: #f1ebe5;">
+            <div class="container">
+                <h2 class="section-title">常见创作方向</h2>
+                <p class="section-desc">根据内容侧重与表现手法，本子创作大致可以分为以下几类，供读者与创作者参考。</p>
+                <div class="cat-grid">
+                    <div class="cat-item">
+                        <span class="cat-icon">⚔️</span>
+                        <h4>日常向</h4>
+                        <p>以轻松、温馨或幽默的日常互动为主，展现角色生活中的点滴，适合轻松阅读。</p>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-icon">🌌</span>
+                        <h4>剧情向</h4>
+                        <p>注重情节推进与世界观展开，将角色置于新的冒险或情感冲突之中。</p>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-icon">✨</span>
+                        <h4>唯美插画集</h4>
+                        <p>以单幅或多幅高质量插画为主，强调氛围、光影与角色美感的呈现。</p>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-icon">🎭</span>
+                        <h4>题材混搭</h4>
+                        <p>将云缨置于不同背景（如现代、科幻、古风等）中，探索角色的更多可能性。</p>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-icon">💬</span>
+                        <h4>四格漫画</h4>
+                        <p>用简短的四格或短篇形式展现角色性格与趣味桥段，节奏明快。</p>
+                    </div>
+                    <div class="cat-item">
+                        <span class="cat-icon">🎨</span>
+                        <h4>风格练习</h4>
+                        <p>画师以云缨为对象进行不同的绘画风格尝试，如水彩、厚涂、赛璐璐等。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 画风与内容特点 -->
+        <section class="content-section" id="styles">
+            <div class="container">
+                <div class="style-panel">
+                    <h2 class="panel-title">画风与内容特点</h2>
+                    <p class="panel-desc">同人创作没有固定标准，但以下一些常见特点可以帮助你更快地找到自己喜欢的类型：</p>
+                    <div class="tag-cloud">
+                        <span class="tag-item">东方武侠风</span>
+                        <span class="tag-item">水墨质感</span>
+                        <span class="tag-item">现代休闲风</span>
+                        <span class="tag-item">赛璐璐上色</span>
+                        <span class="tag-item">厚涂光影</span>
+                        <span class="tag-item">Q版变形</span>
+                        <span class="tag-item">古风服饰</span>
+                        <span class="tag-item">动态姿势</span>
+                        <span class="tag-item">表情特写</span>
+                        <span class="tag-item">色彩明快</span>
+                        <span class="tag-item">线条流畅</span>
+                        <span class="tag-item">氛围感</span>
+                    </div>
+                    <p style="font-size:0.9rem; opacity:0.8; margin-top:20px;">
+                        阅读或收藏时，可以关注画师对角色眼神、手势、以及服饰细节的刻画，这些往往是作品质量的重要体现。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 如何寻找与交流 -->
+        <section class="content-section" id="community" style="background: #f1ebe5;">
+            <div class="container">
+                <h2 class="section-title">社区与交流建议</h2>
+                <p class="section-desc">同人作品的分享与讨论通常集中在多个网络社区，以下方式可以帮助你更高效地参与交流。</p>
+                <div class="community-grid">
+                    <div class="community-card">
+                        <div class="comm-icon">🔍</div>
+                        <h4>标签检索</h4>
+                        <p>在主流同人平台或插画社区中，使用角色名加关键词的组合标签进行检索，可以快速浏览最新创作。</p>
+                    </div>
+                    <div class="community-card">
+                        <div class="comm-icon">💡</div>
+                        <h4>关注创作者</h4>
+                        <p>留意你喜欢的画师的发布动态，许多创作者会定期分享草稿、过程图或更新预告。</p>
+                    </div>
+                    <div class="community-card">
+                        <div class="comm-icon">🗣️</div>
+                        <h4>友好评论</h4>
+                        <p>在作品下表达真诚的赞美与反馈，是支持创作者最直接的方式，也能促进良性互动。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 FAQ -->
+        <section class="content-section" id="faq">
+            <div class="container">
+                <h2 class="section-title">常见问题</h2>
+                <p class="section-desc">针对入门读者和创作者的一些常见疑问，我们整理了以下解答。</p>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question"><span class="faq-q-marker">问</span> 什么是“本子”？</div>
+                        <div class="faq-answer">在中文同人语境中，“本子”通常指同人漫画或同人画集，可以是个人印刷的实体本，也可以是数字版作品。内容以角色二次创作为主。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span class="faq-q-marker">问</span> 在哪里可以找到云缨相关的同人作品？</div>
+                        <div class="faq-answer">常见的平台包括Pixiv、微博、Lofter、Twitter等，搜索角色名加上“同人”“插画”等标签即可。注意遵守各平台的使用规则。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span class="faq-q-marker">问</span> 我想开始创作云缨的同人图，有什么建议？</div>
+                        <div class="faq-answer">首先建议熟悉角色的原设定与服饰细节，不必追求完全一致，但保持角色的核心辨识度会更容易获得共鸣。多练习动态姿势和表情，并大胆尝试不同风格。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span class="faq-q-marker">问</span> 同人创作需要注意版权问题吗？</div>
+                        <div class="faq-answer">同人创作属于非官方的二次创作，应避免用于商业用途或进行未经授权的销售。尊重原作版权并注明非官方性质是基本礼仪。</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span class="faq-q-marker">问</span> 如何提升自己作品的完成度？</div>
+                        <div class="faq-answer">除了基础绘画练习外，可以多研究光影、配色和构图。参考其他优秀画师的作品，并尝试分析其处理手法，也是有效的学习方式。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="copyright">
+                © 2025 云缨同人志 · 仅供爱好者交流参考
+            </div>
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">内容规范</a>
+                <a href="#">建议反馈</a>
+            </div>
+        </div>
+    </footer>
+</body>
+                                                                                                              </html>
