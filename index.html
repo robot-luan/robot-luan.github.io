@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玛雅作品转载-版权规范与优质内容转载指南</title>
+    <meta name="description" content="玛雅作品转载专题页，提供玛雅风格艺术作品的转载规则、版权说明、优质内容推荐与常见问题解答，帮助创作者和爱好者合规分享玛雅主题作品。">
+    <meta name="keywords" content="玛雅作品转载,玛雅艺术,玛雅文化,作品转载,版权规范,内容分享">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: #f7f3ec;
+            color: #2c2a28;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #4e342e 0%, #6d4c41 100%);
+            padding: 18px 0;
+            border-bottom: 4px solid #c9a87c;
+        }
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand-icon {
+            font-size: 30px;
+        }
+        .brand-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #f5e9d8;
+            letter-spacing: 2px;
+        }
+        .brand-sub {
+            font-size: 13px;
+            color: #d7c2a6;
+            margin-top: -4px;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 28px;
+        }
+        .main-nav a {
+            color: #f0e2cf;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        .main-nav a:hover {
+            border-bottom-color: #e0b882;
+            color: #fff;
+        }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #f5e9d8;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* 首屏 Hero */
+        .hero {
+            background: linear-gradient(115deg, #3e2f28 0%, #5d4436 45%, #7a5c48 100%);
+            color: #f9f1e7;
+            padding: 70px 0 55px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 320px;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.08"><polygon points="20,10 80,10 90,50 50,90 10,50" fill="%23e0b882"/><circle cx="50" cy="50" r="25" fill="none" stroke="%23e0b882" stroke-width="2"/></svg>');
+            background-size: 180px;
+            background-repeat: repeat;
+        }
+        .hero-inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .hero-text {
+            flex: 1 1 480px;
+        }
+        .hero h1 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: #f0dfc8;
+        }
+        .hero-desc {
+            font-size: 18px;
+            color: #d9c8b5;
+            max-width: 640px;
+            margin-bottom: 30px;
+        }
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .badge {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid #b99c7c;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: #e6d5c0;
+            backdrop-filter: blur(4px);
+        }
+        .hero-art {
+            flex: 0 0 320px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-art svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .hero-art-caption {
+            margin-top: 14px;
+            font-size: 14px;
+            color: #c8b39e;
+            letter-spacing: 1px;
+        }
+
+        /* 快速指引 */
+        .quick-guide {
+            padding: 40px 0;
+            background: #f7f3ec;
+        }
+        .guide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        .guide-card {
+            background: #fffdf9;
+            border-radius: 16px;
+            padding: 28px 24px;
+            box-shadow: 0 6px 18px rgba(78, 52, 46, 0.06);
+            border-left: 5px solid #8d6e63;
+            transition: transform 0.2s;
+        }
+        .guide-card:hover {
+            transform: translateY(-5px);
+        }
+        .guide-card .num {
+            font-size: 32px;
+            font-weight: 800;
+            color: #a1887f;
+            margin-bottom: 10px;
+        }
+        .guide-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #4e342e;
+        }
+        .guide-card p {
+            font-size: 14px;
+            color: #6d5c50;
+        }
+
+        /* 主要栏目 */
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 50px 0 20px;
+            color: #3e2f28;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            background: #b08a6a;
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+        .content-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            margin-bottom: 30px;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .feature-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee4da;
+            display: flex;
+            gap: 12px;
+            font-size: 16px;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        .feature-list .icon {
+            color: #8d6e63;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* 转载规范 */
+        .rules-section {
+            background: #efe6db;
+            padding: 50px 0;
+        }
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .rule-item {
+            background: #fffaf3;
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 4px solid #a1887f;
+        }
+        .rule-item h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #4e342e;
+        }
+        .rule-item p {
+            font-size: 15px;
+            color: #5d4d42;
+        }
+
+        /* 推荐栏目 */
+        .recommend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .rec-card {
+            background: #fffdf9;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(78, 52, 46, 0.08);
+            border: 1px solid #eaddd0;
+        }
+        .rec-thumb {
+            height: 160px;
+            background: linear-gradient(145deg, #b99c7c, #6d4c41);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5e9d8;
+            font-size: 42px;
+        }
+        .rec-body {
+            padding: 20px;
+        }
+        .rec-body h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #3e2f28;
+        }
+        .rec-body .tag {
+            display: inline-block;
+            background: #f0e2cf;
+            color: #5d4436;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .rec-body p {
+            font-size: 14px;
+            color: #6d5c50;
+        }
+
+        /* FAQ */
+        .faq-section {
+            background: #f7f3ec;
+            padding: 50px 0 60px;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 14px;
+            padding: 24px 30px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+        }
+        .faq-question {
+            font-weight: 600;
+            font-size: 18px;
+            color: #4e342e;
+            display: flex;
+            justify-content: space-between;
+            cursor: default;
+        }
+        .faq-question .q-mark {
+            color: #b08a6a;
+            margin-right: 10px;
+        }
+        .faq-answer {
+            margin-top: 14px;
+            font-size: 16px;
+            color: #5d4d42;
+            border-top: 1px dashed #dccfc0;
+            padding-top: 14px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #2f241f;
+            color: #cbb9a6;
+            padding: 40px 0 30px;
+            font-size: 14px;
+        }
+        .footer-wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .footer-info h3 {
+            color: #e8d5c0;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #cbb9a6;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: #f0dfc8;
+        }
+        .copyright {
+            margin-top: 30px;
+            text-align: center;
+            border-top: 1px solid #4a3a30;
+            padding-top: 20px;
+            font-size: 13px;
+            color: #9d8b7a;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero-art {
+                flex-basis: 100%;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .main-nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                position: absolute;
+                top: 70px;
+                left: 20px;
+                right: 20px;
+                background: #4e342e;
+                padding: 20px;
+                border-radius: 12px;
+                z-index: 99;
+            }
+            .main-nav.open ul {
+                display: flex;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 16px;
+            }
+            .brand-name {
+                font-size: 20px;
+            }
+            .hero {
+                padding: 50px 0;
+            }
+            .hero h1 {
+                font-size: 26px;
+            }
+            .hero-desc {
+                font-size: 16px;
+            }
+            .badge {
+                font-size: 13px;
+                padding: 6px 14px;
+            }
+            .guide-card {
+                padding: 20px;
+            }
+            .content-card {
+                padding: 24px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-wrap">
+            <div class="brand">
+                <span class="brand-icon">🗿</span>
+                <div>
+                    <div class="brand-name">玛雅作品转载</div>
+                    <div class="brand-sub">尊重原创 · 合规分享</div>
+                </div>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">转载指南</a></li>
+                    <li><a href="#">作品分类</a></li>
+                    <li><a href="#">版权说明</a></li>
+                    <li><a href="#">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏 -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>探索玛雅文明之美，规范转载每一份精彩</h1>
+                    <p class="hero-desc">玛雅作品涵盖古老的雕刻、建筑复原图、现代艺术创作以及历史文献插图。本平台专注于提供可靠的转载指引与优质内容聚合，让文化传播有据可依，让创作分享更加有序。</p>
+                    <div class="hero-badges">
+                        <span class="badge">原创保护</span>
+                        <span class="badge">版权指南</span>
+                        <span class="badge">高清素材</span>
+                        <span class="badge">文化科普</span>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="玛雅风格装饰图案">
+                        <rect width="220" height="160" fill="#2d1f18" rx="10"/>
+                        <polygon points="110,25 160,70 140,120 80,120 60,70" fill="#b08a6a" stroke="#e0b882" stroke-width="2"/>
+                        <circle cx="110" cy="75" r="18" fill="#3e2f28" stroke="#d4a373" stroke-width="2"/>
+                        <path d="M70,80 Q60,95 75,105" stroke="#c9a87c" stroke-width="2" fill="none"/>
+                        <path d="M150,80 Q160,95 145,105" stroke="#c9a87c" stroke-width="2" fill="none"/>
+                        <rect x="90" y="120" width="40" height="6" fill="#c9a87c" opacity="0.6"/>
+                        <circle cx="45" cy="40" r="6" fill="#e0b882" opacity="0.5"/>
+                        <circle cx="178" cy="45" r="8" fill="#e0b882" opacity="0.4"/>
+                        <path d="M20,140 L200,140" stroke="#8d6e63" stroke-width="1" opacity="0.5"/>
+                    </svg>
+                    <p class="hero-art-caption">经典玛雅几何纹样 · 仅供示意</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快速指引卡片 -->
+        <section class="quick-guide">
+            <div class="container">
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <div class="num">01</div>
+                        <h3>确认授权范围</h3>
+                        <p>转载前务必查看原作者标注，区分个人使用、非商业分享与商业授权的界限。</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="num">02</div>
+                        <h3>标注来源与作者</h3>
+                        <p>清晰注明创作者名称、原发布平台与链接，这是最基本的尊重与合规要求。</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="num">03</div>
+                        <h3>避免二次修改</h3>
+                        <p>未经允许不得裁剪、涂改、添加水印或改变作品原有表达意图。</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="num">04</div>
+                        <h3>使用场景自查</h3>
+                        <p>新闻报道、学术研究、个人欣赏等场景的转载尺度各有不同，需按规范操作。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 内容区域：转载规范与注意事项 -->
+        <section class="rules-section">
+            <div class="container">
+                <h2 class="section-title">玛雅作品转载核心规范</h2>
+                <div class="rules-grid">
+                    <div class="rule-item">
+                        <h3>🛡️ 尊重原创标识</h3>
+                        <p>多数玛雅艺术作品由研究机构、博物馆或个人创作者发布。转载时需保留水印、版权声明以及数字权利管理信息。即使找不到明确声明，也应当默认保留所有权利。</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>📜 区分公有领域</h3>
+                        <p>古代玛雅文物照片若由博物馆提供并标记为公有领域，可较为自由地使用，但仍建议标注来源机构。现代艺术家的玛雅主题作品则受版权法保护。</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>🌐 平台使用条款</h3>
+                        <p>不同内容平台对转载有不同规定。部分网站允许“分享”但禁止“下载”或“再上传”。在社交媒体转载时，应使用平台自带的分享功能，而非直接搬运文件。</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>📧 商业用途须知</h3>
+                        <p>若计划将玛雅作品用于商品设计、广告宣传或付费内容，必须提前获得版权方书面授权。即使是非营利项目，也建议先与作者沟通。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 推荐内容区 -->
+        <section class="container" style="padding: 30px 0 20px;">
+            <h2 class="section-title">值得关注的玛雅作品类型</h2>
+            <div class="recommend-grid">
+                <article class="rec-card">
+                    <div class="rec-thumb">🏛️</div>
+                    <div class="rec-body">
+                        <span class="tag">历史复原</span>
+                        <h4>玛雅城邦建筑复原图</h4>
+                        <p>基于考古数据的数字复原作品，常用于教育与展览。转载需注明复原团队和学术依据。</p>
+                    </div>
+                </article>
+                <article class="rec-card">
+                    <div class="rec-thumb">🎨</div>
+                    <div class="rec-body">
+                        <span class="tag">现代艺术</span>
+                        <h4>当代玛雅风格插画</h4>
+                        <p>融合传统符号的现代创作，版权归艺术家所有。分享时请勿去除签名或用于NFT铸造。</p>
+                    </div>
+                </article>
+                <article class="rec-card">
+                    <div class="rec-thumb">📿</div>
+                    <div class="rec-body">
+                        <span class="tag">文物摄影</span>
+                        <h4>博物馆官方高清图</h4>
+                        <p>许多博物馆开放高清资源下载，遵循其开放许可即可。大英博物馆、墨西哥国家博物馆等均有相关资源。</p>
+                    </div>
+                </article>
+                <article class="rec-card">
+                    <div class="rec-thumb">📜</div>
+                    <div class="rec-body">
+                        <span class="tag">文献资料</span>
+                        <h4>玛雅抄本与壁画摹本</h4>
+                        <p>古代抄本数字化影像往往属于馆藏机构，转载应指向原馆藏页面而非直接转发扫描件。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 深入内容区：如何正确转载 -->
+        <section class="container" style="padding: 20px 0 40px;">
+            <div class="content-card">
+                <h2 style="font-size: 26px; color: #3e2f28; margin-bottom: 20px;">如何正确进行玛雅作品转载？</h2>
+                <div class="two-col">
+                    <div>
+                        <p style="margin-bottom: 16px;">对于玛雅主题的作品，无论是古老的石刻照片还是现代插画，转载前建议遵循以下四个步骤，既能保护创作者权益，也能让分享更有意义。</p>
+                        <ul class="feature-list">
+                            <li><span class="icon">✓</span> 追溯原始出处：使用以图搜图或反向链接，找到最早发布平台。</li>
+                            <li><span class="icon">✓</span> 阅读授权条款：查看“关于”、“版权”或“使用条款”页面，确认授权类型。</li>
+                            <li><span class="icon">✓</span> 保留完整信息：包括标题、作者、来源URL以及许可证类型（如CC BY 4.0）。</li>
+                            <li><span class="icon">✓</span> 非必要不修改：即使允许修改，也需注明改动之处。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 16px;">对于平台运营者或内容编辑，还需额外注意：</p>
+                        <ul class="feature-list">
+                            <li><span class="icon">✓</span> 建立内部转载审核流程，避免无意侵权。</li>
+                            <li><span class="icon">✓</span> 为读者提供原作品链接，而非仅展示转载图。</li>
+                            <li><span class="icon">✓</span> 定期检查转载内容是否被原作者撤回或更改授权。</li>
+                            <li><span class="icon">✓</span> 教育社区用户正确标注引用，形成良好氛围。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">关于玛雅作品转载的常见问题</h2>
+                <div class="faq-item">
+                    <div class="faq-question"><span><span class="q-mark">Q1.</span> 在社交媒体转发玛雅文物照片算侵权吗？</span></div>
+                    <div class="faq-answer">如果照片由博物馆官方发布并带有分享按钮，使用该按钮通常合规。但下载后重新上传到个人账号，即使注明来源，也可能违反平台规则或侵犯摄影师的邻接权。建议使用官方分享功能或直接转发原帖。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span><span class="q-mark">Q2.</span> 玛雅古代遗迹的图片属于公共领域吗？</div>
+                    <div class="faq-answer">遗迹本身属于人类文化遗产，但拍摄角度、光线和后期处理会产生新的摄影版权。专业摄影师拍摄的图片受版权保护，而某些博物馆对其提供的数字扫描件采用CC0等开放许可。需逐图确认。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span><span class="q-mark">Q3.</span> 我可以用玛雅风格创作同人作品并转载吗？</div>
+                    <div class="faq-answer">如果借鉴古代玛雅元素进行独立创作，作品归你所有。但如果模仿某位现代画家的具体玛雅主题作品，则可能构成衍生创作，需获得原作者的许可。风格本身不受版权保护，具体表达受保护。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span><span class="q-mark">Q4.</span> 转载时找不到原作者怎么办？</div>
+                    <div class="faq-answer">尽力寻找后仍无法确认时，建议不要使用该作品。可以改用明确标注“可自由使用”的开放图库，或联系相关博物馆、文化机构获取授权素材。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span><span class="q-mark">Q5.</span> 非商业用途的转载也需要授权吗？</div>
+                    <div class="faq-answer">需要。非商业用途并不自动等同于免费使用。许多作者允许非商业转载，但会要求署名和禁止修改。最好还是查看作者指定的许可证，或直接私信询问。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-info">
+                    <h3>玛雅作品转载</h3>
+                    <p>致力于传播玛雅文化与艺术，倡导合规转载与原创保护。我们提供实用的转载指南和内容推荐，帮助你在分享精彩作品的同时，尊重每一位创作者的劳动。</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">关于我们</a>
+                    <a href="#">版权声明</a>
+                    <a href="#">联系合作</a>
+                    <a href="#">隐私政策</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 玛雅作品转载专题站 · 本页面内容仅供学习交流，不构成法律意见。具体版权事项请咨询专业律师。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端导航切换
+        document.addEventListener('DOMContentLoaded', function() {
+            var navToggle = document.getElementById('navToggle');
+            var mainNav = document.getElementById('mainNav');
+            if (navToggle) {
+                navToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    mainNav.classList.toggle('open');
+                });
+                document.addEventListener('click', function(e) {
+                    if (!mainNav.contains(e.target)) {
+                        mainNav.classList.remove('open');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+  </html>
