@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs1.5视频-经典反恐精英1.5高清比赛录像与精彩集锦</title>
+    <meta name="description" content="cs1.5视频专题站，观看经典反恐精英1.5版本的高清比赛录像、精彩集锦、战术教学视频及怀旧对战视频。重温黄金年代的枪法与激情。">
+    <meta name="keywords" content="cs1.5视频,反恐精英1.5,cs1.5比赛录像,cs1.5精彩集锦,cs1.5教学视频,cs1.5怀旧视频">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#1a1e24;color:#c8d0d8;line-height:1.7;}
+        a{text-decoration:none;color:inherit;}
+        ul{list-style:none;}
+
+        .container{max-width:1280px;margin:0 auto;padding:0 20px;}
+
+        /* Header */
+        .site-header{background:#0f1115;border-bottom:3px solid #d4a017;position:sticky;top:0;z-index:1000;}
+        .header-inner{display:flex;justify-content:space-between;align-items:center;padding:15px 0;flex-wrap:wrap;}
+        .logo-area h1{font-size:2rem;font-weight:800;color:#e8eef2;letter-spacing:1px;line-height:1.2;}
+        .logo-area h1 span{color:#d4a017;}
+        .logo-area .sub{font-size:0.85rem;color:#7a8a9a;letter-spacing:2px;margin-top:4px;display:block;}
+
+        .main-nav ul{display:flex;gap:30px;}
+        .main-nav a{color:#b0bec5;font-size:1rem;font-weight:500;transition:color 0.2s;padding-bottom:5px;border-bottom:2px solid transparent;}
+        .main-nav a:hover{color:#d4a017;border-bottom-color:#d4a017;}
+        .main-nav .active{color:#d4a017;border-bottom-color:#d4a017;}
+
+        /* 移动端导航 */
+        .nav-toggle{display:none;background:none;border:1px solid #3a4a5a;color:#b0bec5;padding:8px 12px;font-size:1.2rem;cursor:pointer;border-radius:4px;}
+
+        /* Hero 首屏 */
+        .hero-section{background:linear-gradient(135deg,#101418 0%,#1c2833 100%);padding:70px 0 60px;border-bottom:1px solid #2a3640;}
+        .hero-wrap{display:flex;align-items:center;gap:50px;flex-wrap:wrap;}
+        .hero-left{flex:1.2;min-width:300px;}
+        .hero-left h2{font-size:2.8rem;color:#ffffff;font-weight:800;line-height:1.2;margin-bottom:20px;}
+        .hero-left h2 .highlight{color:#d4a017;text-shadow:0 0 20px rgba(212,160,23,0.5);}
+        .hero-left p{color:#9aaab5;font-size:1.1rem;margin-bottom:30px;max-width:600px;}
+        .hero-buttons{display:flex;gap:20px;flex-wrap:wrap;}
+        .btn{display:inline-block;padding:12px 28px;border-radius:6px;font-size:1rem;font-weight:700;transition:all 0.2s;border:2px solid transparent;}
+        .btn-primary{background:#d4a017;color:#0f1115;border-color:#d4a017;}
+        .btn-primary:hover{background:#e8b52a;box-shadow:0 0 25px rgba(212,160,23,0.3);}
+        .btn-outline{border-color:#5a6a7a;color:#c0ccd6;}
+        .btn-outline:hover{border-color:#d4a017;color:#d4a017;}
+
+        .hero-right{flex:0.8;min-width:280px;background:#1a222b;border-radius:12px;padding:20px;border:1px solid #2c3a46;}
+        .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:15px;}
+        .stat-item{background:#101820;padding:15px;border-radius:8px;text-align:center;border-left:3px solid #d4a017;}
+        .stat-item .num{font-size:2rem;font-weight:800;color:#d4a017;}
+        .stat-item .label{font-size:0.8rem;color:#7e8e9e;text-transform:uppercase;letter-spacing:1px;margin-top:5px;}
+
+        /* 分类导航 */
+        .category-section{padding:40px 0;background:#151a20;}
+        .category-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:15px;margin-top:30px;}
+        .cat-card{background:#1e2630;border-radius:8px;padding:20px;text-align:center;transition:transform 0.2s, background 0.2s;border:1px solid #2a3440;}
+        .cat-card:hover{transform:translateY(-5px);background:#253040;border-color:#d4a017;}
+        .cat-card i{font-size:2.2rem;display:block;margin-bottom:10px;}
+        .cat-card .cat-name{font-weight:700;color:#e0e8f0;font-size:1.05rem;}
+        .cat-card .cat-count{color:#6a7a8a;font-size:0.85rem;margin-top:5px;}
+
+        /* 最新更新视频 */
+        .video-section{padding:60px 0;background:#1a1e24;}
+        .section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:35px;}
+        .section-header h2{font-size:1.8rem;color:#e8eef2;border-left:4px solid #d4a017;padding-left:15px;}
+        .section-header .more-link{color:#d4a017;font-size:0.95rem;border-bottom:1px solid #d4a017;padding-bottom:2px;transition:opacity 0.2s;}
+        .section-header .more-link:hover{opacity:0.8;}
+
+        .video-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:25px;}
+        .video-card{background:#151b22;border-radius:10px;overflow:hidden;transition:transform 0.25s, box-shadow 0.25s;border:1px solid #222c36;}
+        .video-card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(0,0,0,0.5);border-color:#d4a017;}
+        .video-thumb{position:relative;background:#0d1117;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+        .video-thumb .placeholder-icon{font-size:3rem;color:#3a4a5a;}
+        .video-thumb .play-btn{position:absolute;width:60px;height:60px;background:rgba(212,160,23,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#0f1115;font-size:1.5rem;transition:transform 0.2s;}
+        .video-card:hover .play-btn{transform:scale(1.1);}
+        .video-duration{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,0.8);color:#fff;padding:3px 8px;border-radius:4px;font-size:0.8rem;}
+        .video-info{padding:18px;}
+        .video-info h3{font-size:1.1rem;color:#dbe4ec;margin-bottom:8px;font-weight:600;line-height:1.4;}
+        .video-info .meta{display:flex;gap:15px;color:#6a7a8a;font-size:0.85rem;}
+        .video-info .meta span{display:flex;align-items:center;gap:5px;}
+
+        /* 推荐与编辑精选 */
+        .featured-section{padding:60px 0;background:#151b22;}
+        .featured-layout{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:start;}
+        .featured-main{background:#1a232e;border-radius:12px;padding:25px;border:1px solid #2a3640;}
+        .featured-main h3{color:#d4a017;font-size:1.4rem;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid #2a3640;}
+        .featured-video-list .fv-item{display:flex;gap:15px;padding:15px 0;border-bottom:1px solid #232e38;}
+        .featured-video-list .fv-item:last-child{border-bottom:none;}
+        .fv-thumb{width:120px;height:70px;background:#0f141a;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+        .fv-thumb i{color:#3a4a5a;font-size:1.2rem;}
+        .fv-info h4{font-size:0.95rem;color:#c8d4de;margin-bottom:5px;font-weight:500;line-height:1.4;}
+        .fv-info .fv-meta{font-size:0.8rem;color:#6a7a8a;}
+
+        .featured-side{display:flex;flex-direction:column;gap:20px;}
+        .side-box{background:#1a232e;border-radius:12px;padding:20px;border:1px solid #2a3640;}
+        .side-box h3{color:#d4a017;font-size:1.2rem;margin-bottom:15px;padding-bottom:8px;border-bottom:1px solid #2a3640;}
+        .hot-tags{display:flex;flex-wrap:wrap;gap:8px;}
+        .tag{background:#0f141a;color:#8a9aa8;padding:5px 12px;border-radius:20px;font-size:0.85rem;border:1px solid #2a3440;transition:all 0.2s;}
+        .tag:hover{background:#d4a017;color:#0f1115;border-color:#d4a017;}
+        .tournament-list{display:flex;flex-direction:column;gap:10px;}
+        .tournament-item{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#0f141a;border-radius:6px;font-size:0.9rem;}
+        .tournament-item .t-name{color:#b0bec5;}
+        .tournament-item .t-year{color:#d4a017;font-weight:700;}
+
+        /* 经典比赛回顾 */
+        .classic-section{padding:60px 0;background:#1a1e24;}
+        .classic-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:25px;}
+        .classic-card{background:#141a21;border-radius:10px;padding:25px;border:1px solid #222c36;transition:border-color 0.2s;}
+        .classic-card:hover{border-color:#d4a017;}
+        .classic-card h3{color:#d4a017;font-size:1.2rem;margin-bottom:10px;}
+        .classic-card .desc{color:#8a9aa8;font-size:0.9rem;margin-bottom:15px;}
+        .classic-card .tag-row{display:flex;gap:8px;flex-wrap:wrap;}
+
+        /* 战术教学 */
+        .tutorial-section{padding:60px 0;background:#151b22;}
+        .tutorial-wrap{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px;}
+        .tutorial-card{background:#1c2630;border-radius:8px;padding:20px;border-left:4px solid #d4a017;}
+        .tutorial-card h4{color:#e0e8f0;font-size:1rem;margin-bottom:8px;}
+        .tutorial-card p{color:#7e8e9e;font-size:0.9rem;}
+        .tutorial-card .level{display:inline-block;margin-top:10px;background:#2a3640;padding:3px 10px;border-radius:15px;font-size:0.8rem;color:#b0bec5;}
+
+        /* 关于cs1.5 */
+        .about-section{padding:60px 0;background:#1a1e24;}
+        .about-content{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+        .about-text h2{color:#e8eef2;font-size:1.8rem;margin-bottom:20px;}
+        .about-text h2 span{color:#d4a017;}
+        .about-text p{color:#9aaab5;margin-bottom:15px;font-size:1rem;}
+        .about-text ul{display:flex;flex-direction:column;gap:10px;margin-top:20px;}
+        .about-text ul li{display:flex;gap:10px;align-items:flex-start;}
+        .about-text ul li::before{content:"▹";color:#d4a017;font-weight:bold;}
+
+        .spec-box{background:#151b22;border-radius:12px;padding:25px;border:1px solid #2a3640;}
+        .spec-box h3{color:#d4a017;margin-bottom:15px;font-size:1.2rem;}
+        .spec-item{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #222c36;font-size:0.95rem;}
+        .spec-item:last-child{border-bottom:none;}
+        .spec-item .key{color:#7e8e9e;}
+        .spec-item .value{color:#c8d4de;font-weight:500;}
+
+        /* FAQ */
+        .faq-section{padding:60px 0;background:#151b22;}
+        .faq-list{max-width:900px;margin:0 auto;}
+        .faq-item{background:#1a232e;border-radius:8px;margin-bottom:15px;overflow:hidden;border:1px solid #2a3640;}
+        .faq-question{padding:18px 25px;font-weight:600;color:#dbe4ec;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background 0.2s;}
+        .faq-question:hover{background:#202b36;}
+        .faq-question .arrow{transition:transform 0.2s;color:#d4a017;}
+        .faq-question.open .arrow{transform:rotate(45deg);}
+        .faq-answer{padding:0 25px;max-height:0;overflow:hidden;transition:max-height 0.3s ease, padding 0.3s;}
+        .faq-answer p{padding-bottom:20px;color:#8a9aa8;font-size:0.95rem;}
+
+        /* CTA */
+        .cta-section{background:linear-gradient(135deg,#0f1115,#1c2833);padding:50px 0;text-align:center;border-top:1px solid #2a3640;}
+        .cta-section h2{font-size:2rem;color:#e8eef2;margin-bottom:15px;}
+        .cta-section p{color:#9aaab5;margin-bottom:30px;max-width:700px;margin-left:auto;margin-right:auto;}
+        .cta-buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+
+        /* Footer */
+        .site-footer{background:#0f1115;padding:40px 0 20px;border-top:3px solid #d4a017;}
+        .footer-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:30px;margin-bottom:30px;}
+        .footer-col h4{color:#d4a017;font-size:1rem;margin-bottom:15px;text-transform:uppercase;letter-spacing:1px;}
+        .footer-col ul li{margin-bottom:8px;}
+        .footer-col ul li a{color:#7e8e9e;font-size:0.9rem;transition:color 0.2s;}
+        .footer-col ul li a:hover{color:#d4a017;}
+        .copyright{text-align:center;color:#5a6a7a;font-size:0.85rem;padding-top:20px;border-top:1px solid #1a222b;}
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .hero-left h2{font-size:2.2rem;}
+            .featured-layout{grid-template-columns:1fr;}
+            .about-content{grid-template-columns:1fr;}
+        }
+        @media (max-width: 768px) {
+            .main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#0f1115;flex-direction:column;padding:20px;gap:15px;border-top:1px solid #2a3640;}
+            .main-nav.open{display:flex;}
+            .nav-toggle{display:block;}
+            .header-inner{padding:10px 0;}
+            .logo-area h1{font-size:1.6rem;}
+            .hero-section{padding:50px 0;}
+            .hero-left h2{font-size:1.8rem;}
+            .hero-buttons .btn{width:100%;text-align:center;}
+            .section-header{flex-direction:column;gap:10px;align-items:flex-start;}
+            .video-grid{grid-template-columns:1fr;}
+            .classic-grid{grid-template-columns:1fr;}
+            .tutorial-wrap{grid-template-columns:1fr;}
+            .footer-grid{grid-template-columns:1fr;}
+        }
+        @media (max-width: 480px) {
+            .hero-stats{grid-template-columns:1fr;}
+            .video-info .meta{flex-direction:column;gap:5px;}
+            .featured-video-list .fv-item{flex-direction:column;}
+            .fv-thumb{width:100%;height:auto;aspect-ratio:16/9;}
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo-area">
+            <h1><span>CS</span>1.5视频站</h1>
+            <span class="sub">经典反恐精英视频档案馆</span>
+        </div>
+        <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰ 菜单</button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">比赛录像</a></li>
+                <li><a href="#">精彩集锦</a></li>
+                <li><a href="#">战术教学</a></li>
+                <li><a href="#">怀旧视频</a></li>
+                <li><a href="#">论坛专区</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero 首屏 -->
+    <section class="hero-section">
+        <div class="container hero-wrap">
+            <div class="hero-left">
+                <h2>重温 <span class="highlight">cs1.5</span> 的黄金岁月</h2>
+                <p>这里汇集了反恐精英1.5版本的经典比赛录像、职业选手高光时刻、战术教学与怀旧对战视频。每一帧都承载着无数玩家的青春与热血。</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">▶ 浏览最新视频</a>
+                    <a href="#" class="btn btn-outline">查看经典赛事</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="num">1,200+</div>
+                        <div class="label">视频资源</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num">2003</div>
+                        <div class="label">经典版本</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num">50+</div>
+                        <div class="label">职业战队</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num">24/7</div>
+                        <div class="label">持续更新</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频分类 -->
+    <section class="category-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>视频分类</h2>
+                <a href="#" class="more-link">全部分类 →</a>
+            </div>
+            <div class="category-grid">
+                <a href="#" class="cat-card">
+                    <i>🏆</i>
+                    <div class="cat-name">职业比赛录像</div>
+                    <div class="cat-count">CPL / WCG / 国内赛事</div>
+                </a>
+                <a href="#" class="cat-card">
+                    <i>⚡</i>
+                    <div class="cat-name">精彩集锦</div>
+                    <div class="cat-count">1v5 残局 / 顶级枪法</div>
+                </a>
+                <a href="#" class="cat-card">
+                    <i>📚</i>
+                    <div class="cat-name">战术教学</div>
+                    <div class="cat-count">投掷物 / 走位 / 意识</div>
+                </a>
+                <a href="#" class="cat-card">
+                    <i>🎮</i>
+                    <div class="cat-name">怀旧对战</div>
+                    <div class="cat-count">混战 / 娱乐 / 怀旧服</div>
+                </a>
+                <a href="#" class="cat-card">
+                    <i>🎥</i>
+                    <div class="cat-name">枪械测评</div>
+                    <div class="cat-count">AK / M4 / AWP 手感</div>
+                </a>
+                <a href="#" class="cat-card">
+                    <i>📡</i>
+                    <div class="cat-name">直播回放</div>
+                    <div class="cat-count">主播 / 比赛直播录像</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新更新视频 -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>最新更新</h2>
+                <a href="#" class="more-link">更多新视频 →</a>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumb">
+                        <span class="placeholder-icon">🎬</span>
+                        <span class="play-btn">▶</span>
+                        <span class="video-duration">24:35</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>经典回顾：2005年WEG决赛 SK vs 3D 决胜图</h3>
+                        <div class="meta">
+                            <span>📅 2024-10-15</span>
+                            <span>🔥 3.2k 播放</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb">
+                        <span class="placeholder-icon">🎬</span>
+                        <span class="play-btn">▶</span>
+                        <span class="video-duration">08:12</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>AK47 压枪教学：从入门到一梭子爆头</h3>
+                        <div class="meta">
+                            <span>📅 2024-10-14</span>
+                            <span>🔥 5.7k 播放</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb">
+                        <span class="placeholder-icon">🎬</span>
+                        <span class="play-btn">▶</span>
+                        <span class="video-duration">15:40</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>AWP 瞬狙集锦：HeatoN 与 Johnny R. 的巅峰对决</h3>
+                        <div class="meta">
+                            <span>📅 2024-10-13</span>
+                            <span>🔥 4.1k 播放</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumb">
+                        <span class="placeholder-icon">🎬</span>
+                        <span class="play-btn">▶</span>
+                        <span class="video-duration">32:18</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>混战精彩时刻：de_dust2 1v5 残局翻盘</h3>
+                        <div class="meta">
+                            <span>📅 2024-10-12</span>
+                            <span>🔥 2.8k 播放</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 编辑精选与热门 -->
+    <section class="featured-section">
+        <div class="container featured-layout">
+            <div class="featured-main">
+                <h3>⭐ 编辑精选</h3>
+                <div class="featured-video-list">
+                    <div class="fv-item">
+                        <div class="fv-thumb"><i>🎬</i></div>
+                        <div class="fv-info">
+                            <h4>史上最强残局：2004年CPL冬季赛决赛经典1v4</h4>
+                            <div class="fv-meta">SK | 视角 · 12:06 · 2024-09-28</div>
+                        </div>
+                    </div>
+                    <div class="fv-item">
+                        <div class="fv-thumb"><i>🎬</i></div>
+                        <div class="fv-info">
+                            <h4>de_nuke 进攻战术全解析：职业队伍如何打内场</h4>
+                            <div class="fv-meta">战术教室 · 18:22 · 2024-09-25</div>
+                        </div>
+                    </div>
+                    <div class="fv-item">
+                        <div class="fv-thumb"><i>🎬</i></div>
+                        <div class="fv-info">
+                            <h4>中国CS黄金一代：wNv 战队经典比赛回顾</h4>
+                            <div class="fv-meta">国内赛事 · 26:45 · 2024-09-20</div>
+                        </div>
+                    </div>
+                    <div class="fv-item">
+                        <div class="fv-thumb"><i>🎬</i></div>
+                        <div class="fv-info">
+                            <h4>手枪局教学：USP vs Glock 的博弈艺术</h4>
+                            <div class="fv-meta">教学视频 · 09:33 · 2024-09-18</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-side">
+                <div class="side-box">
+                    <h3>🔥 热门标签</h3>
+                    <div class="hot-tags">
+                        <a href="#" class="tag">#AK47</a>
+                        <a href="#" class="tag">#AWP</a>
+                        <a href="#" class="tag">#de_dust2</a>
+                        <a href="#" class="tag">#HeatoN</a>
+                        <a href="#" class="tag">#wNv</a>
+                        <a href="#" class="tag">#CPL</a>
+                        <a href="#" class="tag">#WCG</a>
+                        <a href="#" class="tag">#1v5</a>
+                        <a href="#" class="tag">#残局</a>
+                        <a href="#" class="tag">#战术</a>
+                    </div>
+                </div>
+                <div class="side-box">
+                    <h3>🏅 经典赛事</h3>
+                    <div class="tournament-list">
+                        <div class="tournament-item">
+                            <span class="t-name">CPL 2003 夏季赛</span>
+                            <span class="t-year">2003</span>
+                        </div>
+                        <div class="tournament-item">
+                            <span class="t-name">WCG 2004 世界总决赛</span>
+                            <span class="t-year">2004</span>
+                        </div>
+                        <div class="tournament-item">
+                            <span class="t-name">CPL 2005 冬季赛</span>
+                            <span class="t-year">2005</span>
+                        </div>
+                        <div class="tournament-item">
+                            <span class="t-name">WEG 2005 大师赛</span>
+                            <span class="t-year">2005</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经典比赛回顾 -->
+    <section class="classic-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>经典比赛回顾</h2>
+                <a href="#" class="more-link">更多经典 →</a>
+            </div>
+            <div class="classic-grid">
+                <div class="classic-card">
+                    <h3>2003年CPL夏季赛决赛</h3>
+                    <p class="desc">SK.swe 对阵 Team 3D，被称为CS历史上最伟大的决赛之一。双方在 de_dust2 和 de_train 上展开激烈较量。</p>
+                    <div class="tag-row">
+                        <span class="tag">SK</span>
+                        <span class="tag">3D</span>
+                        <span class="tag">决赛</span>
+                    </div>
+                </div>
+                <div class="classic-card">
+                    <h3>2004年WCG世界总决赛</h3>
+                    <p class="desc">来自瑞典的 SK 与美国的 Team 3D 再次相遇，这场比赛让全球CS玩家记住了无数经典镜头。</p>
+                    <div class="tag-row">
+                        <span class="tag">WCG</span>
+                        <span class="tag">世界赛</span>
+                    </div>
+                </div>
+                <div class="classic-card">
+                    <h3>2005年wNv 夺冠之路</h3>
+                    <p class="desc">中国战队 wNv 在WEG大师赛上创造历史，击败世界强队夺冠，成为中国CS的里程碑。</p>
+                    <div class="tag-row">
+                        <span class="tag">wNv</span>
+                        <span class="tag">中国荣耀</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 战术教学 -->
+    <section class="tutorial-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>战术教学视频</h2>
+                <a href="#" class="more-link">全部教学 →</a>
+            </div>
+            <div class="tutorial-wrap">
+                <div class="tutorial-card">
+                    <h4>投掷物进阶指南</h4>
+                    <p>从基础闪光弹到高级烟雾弹战术，掌握每个地图的关键投掷位。</p>
+                    <span class="level">入门-进阶</span>
+                </div>
+                <div class="tutorial-card">
+                    <h4>身法控制与预瞄</h4>
+                    <p>急停、小跳、大跳，职业选手的移动技巧与准星摆放教学。</p>
+                    <span class="level">进阶</span>
+                </div>
+                <div class="tutorial-card">
+                    <h4>残局处理思路</h4>
+                    <p>1v1到1v3的残局应该怎么打？职业选手的决策过程全解析。</p>
+                    <span class="level">高级</span>
+                </div>
+                <div class="tutorial-card">
+                    <h4>团队配合基础</h4>
+                    <p>补枪、拉枪线、交叉火力，如何与队友打出有效配合。</p>
+                    <span class="level">中级</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于cs1.5视频 -->
+    <section class="about-section">
+        <div class="container about-content">
+            <div class="about-text">
+                <h2>为什么<span>cs1.5视频</span>依然值得观看？</h2>
+                <p>反恐精英1.5版本发行于2002年，是CS系列中极具代表性的一代。它的武器平衡性、移动机制和地图设计至今仍被许多老玩家津津乐道。</p>
+                <p>观看cs1.5视频不仅能重温当年的经典比赛，还能学习到许多现代CS中依然适用的基础战术和枪法理念。无论是职业选手的精彩操作，还是普通玩家的欢乐混战，都是那个时代最真实的记录。</p>
+                <ul>
+                    <li>收录2003-2006年全球重要赛事录像</li>
+                    <li>包含中英文解说与纯净原声版本</li>
+                    <li>定期补充历史资料与玩家投稿</li>
+                    <li>所有视频均为人工审核整理</li>
+                </ul>
+            </div>
+            <div class="spec-box">
+                <h3>CS 1.5 视频档案信息</h3>
+                <div class="spec-item">
+                    <span class="key">游戏版本</span>
+                    <span class="value">Counter-Strike 1.5</span>
+                </div>
+                <div class="spec-item">
+                    <span class="key">发行年份</span>
+                    <span class="value">2002年</span>
+                </div>
+                <div class="spec-item">
+                    <span class="key">视频格式</span>
+                    <span class="value">MP4 / FLV / 高清修复</span>
+                </div>
+                <div class="spec-item">
+                    <span class="key">主要地图</span>
+                    <span class="value">de_dust2 / de_train / de_nuke / de_inferno</span>
+                </div>
+                <div class="spec-item">
+                    <span class="key">代表战队</span>
+                    <span class="value">SK.swe / Team 3D / wNv / mousesports</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见问题</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">cs1.5视频和cs1.6视频有什么区别？ <span class="arrow">+</span></div>
+                    <div class="faq-answer"><p>CS1.5与CS1.6在枪械手感、经济系统、地图细节上都有差异。1.5版本没有盾牌，狙击枪开镜速度略有不同，整体节奏被认为更快。许多老玩家认为1.5的AK和AWP手感最为经典。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">在哪里可以找到清晰的cs1.5比赛录像？ <span class="arrow">+</span></div>
+                    <div class="faq-answer"><p>本站收集了从早期HLTV录像到后期高清修复的多种资源。建议优先查看本站的"经典比赛回顾"分类，我们会对视频进行清晰度标注和背景介绍。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">cs1.5视频是否还有战术参考价值？ <span class="arrow">+</span></div>
+                    <div class="faq-answer"><p>虽然现代CS2的战术体系已大幅进化，但cs1.5中的基础投掷物原理、地图控制权博弈、残局心理战等内容仍有学习价值。特别是对于喜欢怀旧或研究CS发展史的玩家。</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">如何投稿自己收藏的cs1.5视频？ <span class="arrow">+</span></div>
+                    <div class="faq-answer"><p>如果你有珍贵的比赛录像或自制集锦，欢迎通过页面底部的"玩家投稿"栏目联系管理员。请注明视频来源、比赛信息及清晰度。</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>寻找那份最初的感动</h2>
+            <p>无论你是寻找当年的一场比赛，还是想重温某个选手的精彩操作，这里都有属于你的cs1.5记忆。</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">开始浏览视频</a>
+                <a href="#" class="btn btn-outline">访问怀旧论坛</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>视频导航</h4>
+                <ul>
+                    <li><a href="#">最新更新</a></li>
+                    <li><a href="#">职业比赛</a></li>
+                    <li><a href="#">精彩集锦</a></li>
+                    <li><a href="#">战术教学</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>资源分类</h4>
+                <ul>
+                    <li><a href="#">地图攻略</a></li>
+                    <li><a href="#">枪械教学</a></li>
+                    <li><a href="#">战队历史</a></li>
+                    <li><a href="#">赛事百科</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关于本站</h4>
+                <ul>
+                    <li><a href="#">网站介绍</a></li>
+                    <li><a href="#">玩家投稿</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">联系方式</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>怀旧社区</h4>
+                <ul>
+                    <li><a href="#">玩家论坛</a></li>
+                    <li><a href="#">战队招募</a></li>
+                    <li><a href="#">约战专区</a></li>
+                    <li><a href="#">下载专区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© 2024 CS1.5视频站 | 重温经典反恐精英 · 本站为非商业怀旧资源站</div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<script>
+    // FAQ toggle
+    function toggleFaq(el) {
+        const answer = el.nextElementSibling;
+        const isOpen = el.classList.contains('open');
+        
+        // Close all
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.classList.remove('open');
+            q.nextElementSibling.style.maxHeight = null;
+            q.nextElementSibling.style.padding = '0 25px';
+        });
+        
+        // Open clicked if was closed
+        if (!isOpen) {
+            el.classList.add('open');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            answer.style.padding = '10px 25px 0';
+        }
+    }
+</script>
+
+</body>
+  </html>
